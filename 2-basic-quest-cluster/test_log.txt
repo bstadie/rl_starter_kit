@@ -1,2 +1,0 @@
-Test log completed successfully.
-Loss is 0.0
