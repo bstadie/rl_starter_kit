@@ -1,0 +1,30 @@
+{
+    "os": "macOS-13.0-arm64-i386-64bit",
+    "python": "3.9.0",
+    "heartbeatAt": "2022-11-19T04:28:51.826424",
+    "startedAt": "2022-11-19T04:28:50.399250",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/hanshuo/Documents/project/Bradly_C_Stadie/Compute_cluster/rl_starter_kit-main/3-logging-checkpointing-reloading/cartpole_checkpointing_example.py",
+    "codePath": "Documents/project/Bradly_C_Stadie/Compute_cluster/rl_starter_kit-main/3-logging-checkpointing-reloading/cartpole_checkpointing_example.py",
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": "1491566796@qq.com",
+    "root": "/Users/hanshuo",
+    "host": "Tansio.local",
+    "username": "hanshuo",
+    "executable": "/opt/homebrew/Caskroom/miniforge/base/envs/mini/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "total": 926.3517189025879,
+        "used": 8.218338012695312
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
