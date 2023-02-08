@@ -71,11 +71,11 @@ For example,
 srun -N 1 -n 1 --account=p31777 --mem=12G --partition=short --time=00:40:00 --pty bash -l
 ```
 
-  # Package management and Custom Packages
+# Package management and Custom Packages
 
-The clusters provided by Quest do not contain all packages needed. While it is possible to run a job and install requ$
+The clusters provided by Quest do not contain all packages needed. While it is possible to run a job and install required packages every time, the installations will not be saved and will need to be reinstalled every time. One way to make sure jobs sent to SLURM will run more efficiently is by using development environments. These serve as a package manager that can be invoked in SLURM, which will not require reinstalling packages every run.
 
-NUQuest recommends using the `conda` environment using
+NUQuest recommends using the `conda` environment using 
 
 ```
 module load python-miniconda3/4.12.0
@@ -87,7 +87,7 @@ Once this module is loaded, a custom environment can be created with the followi
 conda create --name torchenv -c conda-forge pytorch=1.11[build=cuda112*] numpy python=3.8 cudatoolkit=11.2 --yes
 ```
 
-This command will create a new environment named "torchenv" and will install `pytorch`, `numpy`, Python version 3.8 a$
+This command will create a new environment named "torchenv" and will install `pytorch`, `numpy`, Python version 3.8 and `cudatoolkit` version 11.2, and its dependencies. These version numbers can and should be changed to the most updated version as supported by the Quest system.
 
 Once the environment has be created, the environment can activated with
 
@@ -113,7 +113,7 @@ Finally, to exit the environment:
 conda deactivate
 ```
 
-Whenever a job is submitted to SLURM via the bash file, first activate the `miniconda` module, then tell the desired $
+Whenever a job is submitted to SLURM via the bash file, first activate the `miniconda` module, then tell the desired conda environment with the necessary packages to run the python file.
 
 ```
 module load python-miniconda3
@@ -121,4 +121,5 @@ conda run -n [ENVIRONMENT NAME] python file.py
 ```
 
 ![](SbatchCheck-Conda.png)
+
 
