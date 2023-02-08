@@ -70,3 +70,55 @@ For example,
 ```
 srun -N 1 -n 1 --account=p31777 --mem=12G --partition=short --time=00:40:00 --pty bash -l
 ```
+
+  # Package management and Custom Packages
+
+The clusters provided by Quest do not contain all packages needed. While it is possible to run a job and install requ$
+
+NUQuest recommends using the `conda` environment using
+
+```
+module load python-miniconda3/4.12.0
+```
+
+Once this module is loaded, a custom environment can be created with the following:
+
+```
+conda create --name torchenv -c conda-forge pytorch=1.11[build=cuda112*] numpy python=3.8 cudatoolkit=11.2 --yes
+```
+
+This command will create a new environment named "torchenv" and will install `pytorch`, `numpy`, Python version 3.8 a$
+
+Once the environment has be created, the environment can activated with
+
+```
+source activate torchenv
+```
+
+To see the packages installed in the environment
+
+```
+conda list
+```
+
+To add a package that is unlisted:
+
+```
+conda install [package-name]
+```
+
+Finally, to exit the environment:
+
+```
+conda deactivate
+```
+
+Whenever a job is submitted to SLURM via the bash file, first activate the `miniconda` module, then tell the desired $
+
+```
+module load python-miniconda3
+conda run -n [ENVIRONMENT NAME] python file.py
+```
+
+![](SbatchCheck-Conda.png)
+
