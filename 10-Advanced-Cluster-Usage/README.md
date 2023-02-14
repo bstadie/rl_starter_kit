@@ -12,6 +12,8 @@ VSCode comes with several extesions and plugins that can be downloaded. When VSC
 
 Once these extensions are loaded, VSCode is ready to connect to remote servers.
 
+### Todo
+
 - [x] Introduction to VSCode extensions
 - [ ] SSH config file
 - [ ] Terminal view
