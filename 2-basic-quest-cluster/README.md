@@ -101,7 +101,7 @@ To see the packages installed in the environment
 conda list
 ```
 
-To add a package that is unlisted:
+To add a desired package:
 
 ```
 conda install [package-name]
@@ -122,4 +122,5 @@ conda run -n [ENVIRONMENT NAME] python file.py
 
 ![](SbatchCheck-Conda.png)
 
+As from the picture, there is no need to instruct the SLURM job to install packages, as the conda environment is activated and already contains the necessary packages.
 
