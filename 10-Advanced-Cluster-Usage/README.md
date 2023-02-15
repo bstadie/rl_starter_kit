@@ -31,7 +31,7 @@ IdentityFile  (location of the saved id_rsa.pub file from Quest)
 User          (uest user login)
 ```
 
-Save the file updates. This creates an alias for the login to Quest. The following command will tell ssh to log into the `user@quest.northwestern.edu` using the public key given at the location of the `IdentityFile`
+Save the file updates. This creates an alias for the login to Quest. The following command will tell ssh to log into the `user@quest.northwestern.edu` using the public key stored at the location given in `IdentityFile`
 
 ```
 ssh quest
