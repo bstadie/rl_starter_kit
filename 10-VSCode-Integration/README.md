@@ -28,7 +28,7 @@ In the local server, navigate to `~/.ssh/` and create a file called `config` if 
 Host          quest (or any other name to alias the host)
 HostName      quest.northwestern.edu
 IdentityFile  (location of the saved id_rsa.pub file from Quest)
-User          (uest user login)
+User          (quest user login)
 ```
 
 Save the file updates. This creates an alias for the login to Quest. The following command will tell ssh to log into the `user@quest.northwestern.edu` using the public key stored at the location given in `IdentityFile`
