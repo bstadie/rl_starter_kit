@@ -6,7 +6,7 @@ Use Gymnasium Robotics, which has the D4RL environments and which has been confi
 
 The below instructions are left for legacy reasons, but should never be used. I have personally confirmed that gymnasium robotics works with old policies and code, and that the environments are identical to those in D4RL -- Bradly
 
-## Installing Mujoco
+## Installing Mujoco -- OUTDATED. DO NOT USE. SEE ABOVE.
 
 ---
 
