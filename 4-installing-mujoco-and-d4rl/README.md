@@ -1,4 +1,11 @@
 # Installing Mujoco and D4RL locally and on Quest
+
+## UPDATE 02-21-2023
+
+Use Gymnasium Robotics, which has the D4RL environments and which has been confirmed to work without issues: https://github.com/Farama-Foundation/Gymnasium-Robotics
+
+The below instructions are left for legacy reasons, but should never be used. I have personally confirmed that gymnasium robotics works with old policies and code, and that the environments are identical to those in D4RL -- Bradly
+
 ## Installing Mujoco
 
 ---
