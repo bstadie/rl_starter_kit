@@ -15,7 +15,7 @@ Host workstation
     # Forwards ssh agents and GitHub keys
     IdentityFile ~/.ssh/workstation
 
-Host quest (or any other name to alias the host)
+Host quest  #(or any other name to alias the host)
     HostName quest.northwestern.edu
     IdentityFile  (location of the saved id_rsa.pub file from Quest) 
     User (quest user login)
