@@ -11,6 +11,8 @@ After several days you will receive your Quest account activation. The username 
 
 Take following steps in your terminal:
 
+```
+
 ssh bcs516@quest.northwestern.edu    # This should be replaced with your netid 
 
 git clone https://github.com/bstadie/rl_starter_kit.git
@@ -19,32 +21,48 @@ cd 2-basic-quest-cluster
 
 python basic_test.py
 
+```
+
 
 
 Confirm the test log is there.
 
 
+```
+
 vim test_log.txt    #You can use either text editor like VIM, or directly open it in Pycharm.
+
+```
 
 read the contents 
 
+```
+
 exit (escape, q!, enter)
 
+```
+
+Lets look at the test job submission file 
 
 
-rm test_log.txt
-
+```
 vim jobSubmissionTest.sh
+```
 
 
-
+```
 The account is currently = XXXX
 
 Replace it with: <project name>
+```
 
 exit (escape, wq)
+  
+Submit the job 
 
+```
 sbatch jobSubmissionTest.sh
+ ```
 
 Confirm the job submits and outputs test_log.txt
 
