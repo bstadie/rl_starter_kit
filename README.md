@@ -1,5 +1,5 @@
 # rl_starter_kit
-Running RL code Locally, on Slurm, and on GCP.
+Running RL code Locally, on Slurm, on Lambda Labs, and on GCP. 
 
 For many RL projects, using high performance computing is essential.
 We have run into many issues lately launching experiments efficiently on our cluster.
