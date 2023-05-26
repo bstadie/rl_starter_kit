@@ -6,6 +6,7 @@ Much thanks to Ziteng for his help with this section!
 ## SSH config file. 
 One of my least favorite things about SSH is that you need to type this annoying string 
 every time you use it. 
+
 `ssh john@dev.example.com -p 2322`
 
 With SSH config files, you can avoid this pain. 
