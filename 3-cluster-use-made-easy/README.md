@@ -50,7 +50,7 @@ In particular, following this page, we want to execute the following steps
 
 1. Generate new SSH key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 2. Add the new SSH key to your git account [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-3. Turn on SSh agent forwarding. See [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding)
+3. Turn on SSH agent forwarding. See [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding)
 
 Part 3 is the key step. This will set up an agent so that github authentication. 
 You would then add the following to your config file 
