@@ -6,18 +6,21 @@ Much thanks to Ziteng for his help with this section!
 ## SSH config file. 
 One of my least favorite things about SSH is that you need to type this annoying string 
 every time you use it. 
-`ssh john@dev.example.com -p 2322
+`ssh john@dev.example.com -p 2322`
 
 With SSH config files, you can avoid this pain. 
 Start by making a `~/.ssh/config` file. 
 
 In this file, you can add configurations like the following 
 
-`Host lambda
+
+```
+Host lambda
     HostName 192.168.1.1 # Get this from lambda instance
     User ubuntu
     ForwardAgent yes
     IdentityFile ~/.ssh/lambdalab.pem`
+ ```
 
 This then allows you to ssh trivially 
 
@@ -51,12 +54,13 @@ In particular, following this page, we want to execute the following steps
 
 Part 3 is the key step. This will set up an agent so that github authentication. 
 You would then add the following to your config file 
-
-`Host github.com
+```
+ Host github.com
     User git
     Hostname github.com
     AddKeysToAgent yes
-    IdentityFile ~/.ssh/github`
+    IdentityFile ~/.ssh/github
+ ```
 
 This will tell the agent to pass on your github credentials whenever you 
 start an SSH session. For this to work, we need to be sure to add
