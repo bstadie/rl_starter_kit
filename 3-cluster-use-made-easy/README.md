@@ -19,7 +19,7 @@ Host lambda
     HostName 192.168.1.1 # Get this from lambda instance
     User ubuntu
     ForwardAgent yes
-    IdentityFile ~/.ssh/lambdalab.pem`
+    IdentityFile ~/.ssh/lambdalab.pem
  ```
 
 This then allows you to ssh trivially 
