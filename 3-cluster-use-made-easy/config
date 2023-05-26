@@ -1,0 +1,23 @@
+Host lambda
+    HostName 192.168.1.1 # Get this from lambda instance
+    User ubuntu
+    ForwardAgent yes
+    IdentityFile ~/.ssh/lambdalab.pem
+
+Host workstation
+    HostName 192.186.1.84
+    # ip address of remote 
+    User clay
+    # remote username 
+    ForwardX11 yes
+    # useful for matplotlib figures being able to display when running code remotely. 
+    ForwardAgent yes
+    # Forwards ssh agents and GitHub keys
+    IdentityFile ~/.ssh/workstation
+
+
+Host github.com
+    User git
+    Hostname github.com
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/github
